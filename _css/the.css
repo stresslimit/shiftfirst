@@ -1,0 +1,68 @@
+
+.accent-text {
+  font-size: 1.2em;
+}
+@media (--viewport-md) {
+  .accent-text {
+    font-size: 1.4em;
+  }
+}
+
+@media (--viewport-md) {
+  .step {
+    max-width: 15em;
+    position: relative;
+    clear: both;
+  }
+  .step1:before {
+    left: 19em;
+    top: 1em;
+    width: 120px;
+    height: 100px;
+    background: url('/assets/images/arrow1.png') 0 0 no-repeat;
+  }
+  .step2 {
+    float: right;
+  }
+  .step2:after {
+    left: -2em;
+    width: 150px;
+    height: 100px;
+    background: url('/assets/images/arrow2.png') 0 0 no-repeat;
+  }
+  .step3 {
+    margin: auto;
+    padding-top: 5em;
+  }
+  .step3:before {
+    left: -7em;
+    top: -6em;
+    width: 90px;
+    height: 180px;
+    background: url('/assets/images/arrow3.png') 0 0 no-repeat;
+  }
+  .step1:before, .step2:after, .step3:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-size: contain;
+  }
+}
+
+.center {
+  text-align: center;
+}
+.section {
+  padding: 2em 0;
+}
+.bg-noir {
+  background: var(--black);
+  color: var(--white);
+}
+.bg-noir [class*="title-"] {
+  color: var(--blue-onblack);
+}
+.bg-white {
+  background: var(--white);
+  color: var(--black);
+}
